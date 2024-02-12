@@ -1,0 +1,44 @@
+{
+  "name": "beastbytes/yii-widgets",
+  "type": "library",
+  "description": "Widgets for Yii3",
+  "keywords": [
+    "dialog",
+    "widget",
+    "Yii3"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [{
+    "name": "Chris Yates",
+    "email": "chris.l.yates@gmail.com"
+  }],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0",
+    "yiisoft/assets": "^4.0",
+    "yiisoft/html": "^3.0",
+    "yiisoft/widget": "^2.0"
+  },
+  "require-dev": {
+    "roave/infection-static-analysis-plugin": "^1.0",
+    "roave/security-advisories": "dev-latest",
+    "vimeo/psalm": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BeastBytes\\Yii\\Widgets\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BeastBytes\\Yii\\Widgets\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "infection": "roave-infection-static-analysis-plugin",
+    "psalm": "psalm",
+    "robo": "robo",
+    "test": "phpunit --testdox"
+  }
+}

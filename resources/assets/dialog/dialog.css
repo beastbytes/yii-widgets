@@ -1,0 +1,48 @@
+.dialog {
+    --closeButtonBackground: crimson;
+    --closeButtonColor: aliceblue;
+    --dialogBackground: #fff;
+    --footerBackground: #efefef;
+    --headerBackground: #efefef;
+    --modalBackground: rgba(0, 0, 0, 0.5);
+    --modalShadow: rgba(0, 0, 0, 0.5);;
+}
+.dialog {
+    background: var(--dialogBackground);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px var(--modalShadow);
+    cursor: default;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow: auto;
+    position: relative;
+    transition: all 0.35s ease-in;
+}
+.dialog::backdrop {
+    background: var(--modalBackground);
+}
+.dialog > * {
+    padding: 1rem;
+}
+.dialog-footer {
+    background: var(--footerBackground);
+}
+.dialog-header {
+    align-items: center;
+    background: var(--headerBackground);
+    display: flex;
+    justify-content: space-between;
+}
+.close-dialog {
+    background: var(--closeButtonBackground);
+    border-radius: 50%;
+    color: var(--closeButtonColor);
+    font-size: 1.5rem;
+    height: 2rem;
+    horiz-align: center;
+    vertical-align: center;
+    width: 2rem;
+}
+.dialog p + p {
+    margin-top: 1rem;
+}
