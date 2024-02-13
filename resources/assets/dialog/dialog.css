@@ -34,13 +34,14 @@
     justify-content: space-between;
 }
 .close-dialog {
+    align-items: center;
     background: var(--closeButtonBackground);
     border-radius: 50%;
     color: var(--closeButtonColor);
+    display: inline-flex;
     font-size: 1.5rem;
     height: 2rem;
-    horiz-align: center;
-    vertical-align: center;
+    justify-content: center;
     width: 2rem;
 }
 .dialog p + p {
