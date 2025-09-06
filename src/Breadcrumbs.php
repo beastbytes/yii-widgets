@@ -55,7 +55,7 @@ final class Breadcrumbs extends Widget
     private array|null $homeItem = ['label' => 'Home', 'url' => '/'];
     private array $items = [];
     private string $itemTemplate = "<li>{link}</li>\n";
-    private string $tag = 'ul';
+    private string $tag = 'ol';
 
     /**
      * Returns a new instance with the specified active item template.
